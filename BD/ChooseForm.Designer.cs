@@ -32,6 +32,7 @@
             this.BetsButton = new System.Windows.Forms.Button();
             this.DevButton = new System.Windows.Forms.Button();
             this.ClientButton = new System.Windows.Forms.Button();
+            this.DocButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AgentButton
@@ -74,11 +75,22 @@
             this.ClientButton.UseVisualStyleBackColor = true;
             this.ClientButton.Click += new System.EventHandler(this.ClientButton_Click);
             // 
+            // DocButton
+            // 
+            this.DocButton.Location = new System.Drawing.Point(45, 125);
+            this.DocButton.Name = "DocButton";
+            this.DocButton.Size = new System.Drawing.Size(132, 23);
+            this.DocButton.TabIndex = 4;
+            this.DocButton.Text = "Выходные документы";
+            this.DocButton.UseVisualStyleBackColor = true;
+            this.DocButton.Click += new System.EventHandler(this.DocButton_Click);
+            // 
             // ChooseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(215, 115);
+            this.ClientSize = new System.Drawing.Size(215, 160);
+            this.Controls.Add(this.DocButton);
             this.Controls.Add(this.ClientButton);
             this.Controls.Add(this.DevButton);
             this.Controls.Add(this.BetsButton);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button BetsButton;
         private System.Windows.Forms.Button DevButton;
         private System.Windows.Forms.Button ClientButton;
+        private System.Windows.Forms.Button DocButton;
     }
 }

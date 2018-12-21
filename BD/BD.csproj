@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -91,11 +95,29 @@
     <Compile Include="Auto.Designer.cs">
       <DependentUpon>Auto.cs</DependentUpon>
     </Compile>
+    <Compile Include="BankRoll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankRoll.Designer.cs">
+      <DependentUpon>BankRoll.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChooseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChooseForm.Designer.cs">
       <DependentUpon>ChooseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientBank.Designer.cs">
+      <DependentUpon>ClientBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientOrder.Designer.cs">
+      <DependentUpon>ClientOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="DeleteAgents.cs">
       <SubType>Form</SubType>
@@ -121,6 +143,9 @@
     <Compile Include="DeleteDev.Designer.cs">
       <DependentUpon>DeleteDev.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InsertAgents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +169,12 @@
     </Compile>
     <Compile Include="InsertDev.Designer.cs">
       <DependentUpon>InsertDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManyDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManyDocs.Designer.cs">
+      <DependentUpon>ManyDocs.cs</DependentUpon>
     </Compile>
     <Compile Include="ShowAgents.cs">
       <SubType>Form</SubType>
@@ -186,8 +217,17 @@
     <EmbeddedResource Include="Auto.resx">
       <DependentUpon>Auto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BankRoll.resx">
+      <DependentUpon>BankRoll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChooseForm.resx">
       <DependentUpon>ChooseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientBank.resx">
+      <DependentUpon>ClientBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientOrder.resx">
+      <DependentUpon>ClientOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteAgents.resx">
       <DependentUpon>DeleteAgents.cs</DependentUpon>
@@ -213,6 +253,9 @@
     <EmbeddedResource Include="InsertDev.resx">
       <DependentUpon>InsertDev.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManyDocs.resx">
+      <DependentUpon>ManyDocs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowAgents.resx">
       <DependentUpon>ShowAgents.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +277,7 @@
     <EmbeddedResource Include="ShowDev.resx">
       <DependentUpon>ShowDev.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

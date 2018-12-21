@@ -53,12 +53,12 @@ namespace BD
                 {
                     if (LoginBox.Text != "admin")
                     {
-                        d.user();
+                        d.User();
                         d.Show();
                     }
                     else
                     {
-                        d.admin();
+                        d.Admin();
                         d.Show();
                     }
                 }

@@ -17,11 +17,11 @@ namespace BD
         {
 
         }
-        public void admin()
+        public void Admin()
         {
             InitializeComponent();
         }
-        public void user()
+        public void User()
         {
             InitializeComponent();
             AgentButton.Visible = false;
@@ -68,6 +68,12 @@ namespace BD
         private void DevButton_Click(object sender, EventArgs e)
         {
             ShowDev exm = new ShowDev();
+            exm.Show();
+        }
+
+        private void DocButton_Click(object sender, EventArgs e)
+        {
+            ManyDocs exm = new ManyDocs();
             exm.Show();
         }
     }
